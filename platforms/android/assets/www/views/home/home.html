@@ -1,7 +1,7 @@
 <ion-view view-title="Home" hide-back-button="true">
         <ion-content class="padding-top" ng-init="init()">
-          <h1>Hello <label ng-model="profil.name"></label></h1>
-          <div ng-model="profil"></div>
+          <h1>Hello {{profil.name}}</label></h1>
+        <div>{{profil}}</div>
           <button ng-click="logOut()" class="button button-clear button-positive">Logout</button>
         </ion-content>
 </ion-view>

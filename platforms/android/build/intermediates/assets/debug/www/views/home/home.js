@@ -5,7 +5,7 @@ $scope.init = function(){
 
   $http.get("https://graph.facebook.com/v2.2/me", { params: { access_token: $rootScope.access_token, fields: "id,name,gender,location,website,picture,relationship_status,email", format: "json" }}).then(function(result) {
    $scope.profil = result.data;
-   alert(JSON.stringify($scope.profileData));
+   alert(JSON.stringify($scope.profil));
 }, function(error) {
    alert("There was a problem getting your profile.  Check the logs for details.");
    console.log(error);
