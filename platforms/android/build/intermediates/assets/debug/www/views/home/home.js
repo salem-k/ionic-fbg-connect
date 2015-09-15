@@ -1,9 +1,18 @@
 'Use Strict';
-angular.module('App').controller('homeController', function ($scope, $state,$cordovaOauth, $localStorage, $location,$http,$ionicPopup, $firebaseObject, Auth, FURL, Utils) {
-  var ref = new Firebase(FURL);
+angular.module('App').controller('homeController', function ($scope, $state,$rootScope,$location,$http) {
 
+$scope.init = function(){
+
+  $http.get("https://graph.facebook.com/v2.2/me", { params: { access_token: $rootScope.access_token, fields: "id,name,gender,location,website,picture,relationship_status,email", format: "json" }}).then(function(result) {
+   $scope.profil = result.data;
+   alert(JSON.stringify($scope.profileData));
+}, function(error) {
+   alert("There was a problem getting your profile.  Check the logs for details.");
+   console.log(error);
+});
+ };
   $scope.logOut = function () {
-      Auth.logout();
+
       $location.path("/login");
   }
 

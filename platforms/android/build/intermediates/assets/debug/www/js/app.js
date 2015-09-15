@@ -24,7 +24,7 @@ $stateProvider
     .state('home', {
       url: '/home',
       templateUrl: 'views/home/home.html',
-    //  controller:'homeController'
+      controller:'homeController'
     })
     .state('callback',{
       url:'/callback',
