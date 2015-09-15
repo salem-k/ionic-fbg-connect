@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/raniaw/Documents/workspace3/AppForm/platforms/android/build/intermediates/exploded-aar/android/CordovaLib/unspecified/debug/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9ae9e43d87e53d62de64640bf93889614a039f9e">
+        <dex dex="/Users/raniaw/Documents/workspace3/AppForm/platforms/android/build/intermediates/pre-dexed/debug/classes-9dffa958d6929ae7ae9fb0dfa3d0054d984bc89d.jar" />
+    </item>
+
+</items>

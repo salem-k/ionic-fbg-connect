@@ -1,0 +1,2 @@
+/Users/raniaw/Documents/workspace3/AppForm/platforms/android/build/intermediates/classes/debug
+/Users/raniaw/Documents/workspace3/AppForm/platforms/android/build/intermediates/pre-dexed/debug/classes-9dffa958d6929ae7ae9fb0dfa3d0054d984bc89d.jar
